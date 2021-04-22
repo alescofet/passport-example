@@ -1,0 +1,43 @@
+0. Eliminar carpeta Bin 
+
+0.1 En app.js eliminar el export y sustituir por app.listen y el puerto
+
+0.2 package.json cambiar los scripts de inicio("npm start y eso")+
+
+1. instalar paquetes:
+  -bcrypt(si no funciona, instalar bcryptjs)
+  -passport
+  -passport-local
+  -express-session
+  -connect-flash
+
+2. (app.js)Importar los paquetes
+
+3. (app.js)Configurar el middleware de Session
+
+4. (app,js)Configurar la serializacion del usuario
+
+5. (app.js)Configurar la deserializacion del usuario
+
+6. (app.js)Configurar el middleware de flash
+
+7. (app.js)Configurar el middleware del Strategy
+
+8. (models)Crear archivo User.model.js y configurarlo
+
+9. (app.js)Importar el modelo de User
+
+10. (app.js)Configurar middleware de passport
+
+11. (routes)Crear archivo auth.routes donde meter nuestras rutas auth:
+  -get signup
+  -post signup
+  -get login
+  -post login
+  -post logout
+
+12. Crear vistas signup.hbs y login.hbs
+
+13.(auth.routes.js) Crear middleware de checkForAuth
+
+
