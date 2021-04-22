@@ -21,7 +21,7 @@ const User = require(`./models/User.model`)
 /* <--------------------------------------------DATABASE CONFIG---------------------------------------------> */
 
 mongoose
-  .connect('mongodb://localhost/passport-example', {
+  .connect(process.env.ATLAS, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
